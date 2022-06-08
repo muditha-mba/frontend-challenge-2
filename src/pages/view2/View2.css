@@ -1,0 +1,54 @@
+.view2 {
+  width: 100%;
+  padding: 2rem;
+  min-height: calc(100vh - 6rem);
+}
+.view2-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.view2-content .text-container {
+  margin: 2rem 0rem;
+}
+
+.view2-content .img-container {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.view2-content .img-container img {
+  width: 100%;
+  display: block;
+}
+
+.view2-content .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45rem;
+}
+
+/* .view2-content .input-container input {
+  text-align: center;
+  font-size: 1.7rem;
+  height: 4.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+} */
+
+@media only screen and (max-width: 550px) {
+  .view2-content {
+    margin-top: 10rem;
+  }
+  .view2-content .input-container {
+    width: 90%;
+  }
+}

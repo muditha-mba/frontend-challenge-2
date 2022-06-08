@@ -1,0 +1,18 @@
+.progressBar {
+  height: 0.7rem;
+  width: 100%;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  position: relative;
+}
+/* dark backcolor #283252 */
+.progressBar-level {
+  height: 100%;
+  background-color: #671cc9;
+  position: absolute;
+  z-index: 1;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,28 @@
+.view4 {
+  width: 100%;
+  padding: 2rem;
+  min-height: calc(100vh - 6rem);
+}
+
+.view4-headings {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.view4-content {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 8rem;
+}
+
+.view4-content .col {
+  flex: 1;
+  margin: 0rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.view4__button--container {
+  margin-bottom: 2rem;
+}

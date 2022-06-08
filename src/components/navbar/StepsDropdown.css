@@ -1,0 +1,44 @@
+/* ---------------------------nav steps dropdown------------------------ */
+.steps-dropdown {
+  position: absolute;
+  background-color: #fff;
+  top: 4.2rem;
+  width: 18rem;
+  border: 1px solid #e5e5e5;
+  box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 2;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  transform: translateX(103%);
+}
+
+.steps-dropdown .item,
+.steps-dropdown .unselect-item {
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.steps-dropdown .item {
+  color: #a2a5b9;
+}
+.steps-dropdown .unselect-item {
+  color: #e3e5f3;
+}
+
+.steps-dropdown .item:hover {
+  background-color: #f5f5f5;
+  color: #283252;
+}
+
+@media only screen and (max-width: 768px) {
+  .steps-dropdown {
+    transform: translateX(67%);
+  }
+}

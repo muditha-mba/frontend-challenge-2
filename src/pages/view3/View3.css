@@ -1,0 +1,141 @@
+.view3 {
+  width: 100%;
+  padding: 2rem;
+  min-height: calc(100vh - 6rem);
+}
+.view3-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 8rem;
+}
+
+.view3-content .text-container {
+  margin: 2rem 0rem;
+}
+
+.view3-content .img-container {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.view3-content .img-container img {
+  width: 100%;
+  display: block;
+}
+
+.view3__input--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45rem;
+}
+
+/* ----------image upload------------ */
+.image-upload {
+  height: 7.5rem;
+  width: 7.5rem;
+  background-color: #fff;
+  border: 1px solid rgb(197, 197, 197);
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.image-upload > input {
+  display: none;
+}
+.attach-doc {
+  cursor: pointer;
+}
+
+.upload-image {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.upload-icon {
+  transition: all 0.4s ease !important;
+  font-size: 4rem !important;
+  color: rgb(197, 197, 197) !important;
+}
+
+.upload-icon:hover {
+  color: blueviolet !important;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+.logo-texts {
+  margin-bottom: 1rem;
+}
+
+.logo-texts p {
+  font-size: 1.4rem;
+}
+
+.logo-texts p[error="false"] {
+  color: #a2a5b9;
+}
+.logo-texts p[error="true"] {
+  color: crimson;
+}
+
+.logo-texts span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #a2a5b9;
+}
+
+/* ----------datepicker------------ */
+.view3-datePicker {
+  text-align: center;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  width: 23rem;
+  margin: 0.5rem 0rem;
+  transition: all 0.3s ease;
+}
+
+.view3-datePicker[type="date"]::before {
+  color: #c0c0c0;
+  font-weight: 200;
+  padding: 1rem;
+  content: attr(placeholder);
+}
+.view3-datePicker[type="date"] {
+  color: #ffffff;
+}
+.view3-datePicker[type="date"]:focus,
+.view3-datePicker[type="date"]:valid {
+  color: #363636;
+}
+.view3-datePicker[type="date"]:focus::before,
+.view3-datePicker[type="date"]:valid::before {
+  content: "" !important;
+}
+
+/* ---------------------------------- */
+
+@media only screen and (max-width: 550px) {
+  .view3-content {
+    margin-top: 10rem;
+  }
+  .view3__input--container {
+    width: 90%;
+  }
+}

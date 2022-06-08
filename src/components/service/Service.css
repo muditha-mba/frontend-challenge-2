@@ -1,0 +1,70 @@
+.service {
+  height: 7rem;
+  width: 90%;
+  padding: 1.2rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1.5rem 0.5rem;
+}
+
+.service .left,
+.service .right {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.service .img-container {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  margin-right: 1.2rem;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.service .img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service .text-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #283252;
+  font-weight: 600;
+}
+.service .text-container span {
+  font-family: "Roboto", sans-serif;
+  color: #a2a5b9;
+  font-size: 1.3rem;
+}
+
+.service .checkbox-container {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+  box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+  transition: all 0.3s ease;
+}
+
+.service-checked {
+  border: 1px solid #671cc9;
+}
+
+.service-notChecked {
+  border: 1px solid #e5e5e5;
+}
+
+.hide-checkbox {
+  opacity: 0;
+}
+.show-checkbox {
+  opacity: 1;
+}

@@ -1,0 +1,18 @@
+export const initialState = {
+  illustrator: false,
+  photoshop: false,
+  figma: false,
+  taiga: false,
+  adobeXD: false,
+  invision: false,
+  jira: false,
+  slack: false,
+  asana: false,
+  teamwork: false,
+  github: false,
+  gitlab: false,
+  atlassian: false,
+  freshworks: false,
+  salesforce: false,
+  zoho: false,
+};
