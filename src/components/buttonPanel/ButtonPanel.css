@@ -63,7 +63,29 @@
 .buttonPanel button:last-child:active {
   box-shadow: none;
 }
+/* -------------------Dark-Mode-Styles---------------------- */
+.buttonPanel[dark="true"] {
+  background-color: #28282b;
+  border-color: #3e3e3e;
+}
+.buttonPanel[dark="true"] button:first-child {
+  background-color: #2e2e31;
+  border: 1px solid #454545;
+  color: #aaaab3;
+}
+.buttonPanel[dark="true"] button:first-child:hover {
+  border: 1px solid #797bf2;
+  color: #797bf2;
+}
+.buttonPanel[dark="true"] button:last-child {
+  color: #fff;
+  border-color: #797bf2;
+  background: #797bf2;
+  box-shadow: 0 14px 26px -12px rgb(121 123 242 / 42%),
+    0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(121 123 242 / 20%);
+}
 
+/* -------------------Media-Queries-------------------------- */
 @media only screen and (max-width: 450px) {
   .buttonPanel {
     min-width: 80%;

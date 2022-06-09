@@ -9,7 +9,7 @@ const View1 = () => {
     <ViewWrapper>
       <div className="view1">
         <div className="view1-heading">
-          <h1>Select your stratery</h1>
+          <h2>Select your stratery</h2>
         </div>
 
         <div className="view1-cards">

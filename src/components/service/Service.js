@@ -40,7 +40,7 @@ const Service = ({
             isChecked ? "show-checkbox" : "hide-checkbox"
           }`}
         >
-          <Check style={styles} />
+          <Check className="checkbox" style={styles} />
         </div>
       </div>
     </div>

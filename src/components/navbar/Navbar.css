@@ -2,13 +2,13 @@
   height: 6.7rem;
   width: 100%;
   position: fixed;
-  background-color: #fff;
   top: 0;
   left: 0;
   transition: all 0.3s;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .nav-content {
@@ -119,6 +119,52 @@
 .nav__dropdown--profile {
   margin-left: 0.1rem;
 }
+
+/* -------------------Dark-Mode-Styles---------------------- */
+
+.nav[dark="true"] {
+  background-color: #1e1e21;
+}
+.nav[dark="true"] .nav__dropdown--text {
+  color: #aaaab3 !important;
+}
+.nav[dark="true"] .nav__dropdown--text p {
+  color: #aaaab3 !important;
+}
+.nav[dark="true"] .nav-mode {
+  border-color: #2d2d31 !important;
+}
+.nav[dark="true"] .nav__profile--avatar {
+  border-color: #2d2d31 !important;
+}
+.nav[dark="true"] .profile-dropdown {
+  background-color: #28282b;
+  border-color: #2d2d31;
+  color: #aaaab3;
+}
+.nav[dark="true"] .profile-dropdown .name {
+  color: #aaaab3;
+}
+.nav[dark="true"] .steps-dropdown .item:hover,
+.nav[dark="true"] .profile-dropdown .item:hover {
+  background-color: #454545;
+  color: #aaaab3;
+}
+.nav[dark="true"] hr {
+  background-color: #aaaab3;
+}
+.nav[dark="true"] .steps-dropdown {
+  background-color: #28282b;
+  border-color: #2d2d31;
+  color: #aaaab3;
+}
+.nav[dark="true"] .progressBar {
+  background-color: #303033;
+}
+.nav[dark="true"] .progressBar-level {
+  background: #797bf2;
+}
+/* ------------------media-Queries----------------------------- */
 
 @media only screen and (max-width: 768px) {
   .nav__dropdown--text span {

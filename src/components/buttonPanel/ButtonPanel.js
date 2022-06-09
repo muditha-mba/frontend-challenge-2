@@ -5,6 +5,7 @@ import loadingGif from "../../imgs/loading.gif";
 /* className={`buttonPanel ${currentLevel > 1 ? show : hide}`} */
 const ButtonPanel = () => {
   const { isFetching } = useSelector((state) => state.user);
+  const { isDarkMode } = useSelector((state) => state.app);
   const location = useLocation();
   const currentLevel = +location.pathname.slice(-1);
   let style;
@@ -23,7 +24,7 @@ const ButtonPanel = () => {
     navigate(`${location.pathname.slice(0, -1)}${currentLevel + 1}`);
   }; */
   return (
-    <div className={`buttonPanel ${style}`}>
+    <div dark={isDarkMode.toString()} className={`buttonPanel ${style}`}>
       <button onClick={preHandler}>Previous</button>
       <button form={`view${currentLevel}-form`} type="submit">
         {isFetching ? (

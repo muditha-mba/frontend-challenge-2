@@ -10,7 +10,7 @@ import View5 from "./pages/view5/View5";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <ButtonPanel />
       <Routes>

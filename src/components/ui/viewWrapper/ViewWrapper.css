@@ -3,4 +3,67 @@
   width: 100%;
   margin-top: 6rem;
   background-color: #f2f2f2;
+  transition: all 0.3s ease;
+}
+/* -------------------Dark-Mode-Styles---------------------- */
+.viewWrapper[dark="true"] {
+  background: #3b3b41;
+}
+
+.viewWrapper[dark="true"] button {
+  color: #fff;
+  border-color: #797bf2;
+  background: #797bf2;
+  box-shadow: 0 14px 26px -12px rgb(121 123 242 / 42%),
+    0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(121 123 242 / 20%);
+}
+
+.viewWrapper[dark="true"] input,
+.viewWrapper[dark="true"] textarea {
+  background-color: #28282b;
+  border-color: #2d2d31;
+  color: #aaaab3;
+}
+
+.viewWrapper[dark="true"] input:focus,
+.viewWrapper[dark="true"] textarea:focus {
+  background-color: #28282b;
+  border-color: #2d2d31;
+  color: #aaaab3;
+}
+
+.viewWrapper[dark="true"] h2,
+.viewWrapper[dark="true"] p {
+  color: #aaaab3;
+}
+
+.viewWrapper[dark="true"] .image-upload {
+  background-color: #28282b;
+}
+
+.viewWrapper[dark="true"] .view3-datePicker[type="date"]:focus,
+.viewWrapper[dark="true"] .view3-datePicker[type="date"]:valid {
+  color: #aaaab3;
+}
+
+.viewWrapper[dark="true"] .service {
+  background-color: #2e2e31;
+  border-color: #454545;
+}
+.viewWrapper[dark="true"] .service p,
+.viewWrapper[dark="true"] .service span {
+  color: #aaaab3;
+}
+.viewWrapper[dark="true"] .service-checked {
+  border: 1px solid #797bf2;
+}
+.viewWrapper[dark="true"] .service .checkbox-container {
+  background-color: #262627;
+  border-color: #454545;
+}
+.viewWrapper[dark="true"] .checkbox {
+  color: #797bf2 !important;
+}
+.viewWrapper[dark="true"] .selection:hover {
+  background-color: #2e2e31 !important;
 }
